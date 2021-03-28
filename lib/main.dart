@@ -43,7 +43,70 @@ class _MeuAppState extends State<MeuApp> {
                   ),
                   //Cards
                   Container(
-                    child: Row(),
+                    padding: EdgeInsets.all(10.0),
+                    color: Colors.white,
+                    margin:
+                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.mail,
+                          color: Colors.blue,
+                        ),
+                        SizedBox(height: 2.5),
+                        Text(
+                          " adilsonkchameia@gmail.com",
+                          style: TextStyle(
+                            letterSpacing: 2,
+                            color: Colors.blue,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(10.0),
+                    color: Colors.white,
+                    margin:
+                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.phone,
+                          color: Colors.blue,
+                        ),
+                        SizedBox(height: 2.5),
+                        Text(
+                          " +244 948 294 426",
+                          style: TextStyle(
+                            letterSpacing: 2,
+                            color: Colors.blue,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(10.0),
+                    color: Colors.white,
+                    margin:
+                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.computer,
+                          color: Colors.blue,
+                        ),
+                        SizedBox(height: 2.5),
+                        Text(
+                          " GitHub: @adilsonchameia",
+                          style: TextStyle(
+                            letterSpacing: 2,
+                            color: Colors.blue,
+                          ),
+                        ),
+                      ],
+                    ),
                   )
                 ],
               ),
