@@ -17,14 +17,34 @@ class _MeuAppState extends State<MeuApp> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-            backgroundColor: Colors.teal,
+            backgroundColor: Colors.blue,
             body: SafeArea(
-              child: Row(
+              child: Column(
                 children: [
                   CircleAvatar(
-                    radius: 50.0,
-                    backgroundImage: AssetImage("images/ady.jpg") ,
-                    ),
+                    radius: 80.0,
+                    backgroundImage: AssetImage("images/ady.jpg"),
+                  ),
+                  Text(
+                    "Adilson Chameia",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontFamily: "Pacifico"),
+                  ),
+                  Text(
+                    "Starting With Flutter",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                        letterSpacing: 2.5,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  //Cards
+                  Container(
+                    child: Row(),
+                  )
                 ],
               ),
             )));
