@@ -20,6 +20,7 @@ class _MeuAppState extends State<MeuApp> {
             backgroundColor: Colors.blue,
             body: SafeArea(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CircleAvatar(
                     radius: 80.0,
@@ -40,6 +41,13 @@ class _MeuAppState extends State<MeuApp> {
                         fontSize: 15,
                         letterSpacing: 2.5,
                         fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    height: 50.0,
+                    width: 150,
+                    child: Divider(
+                      color: Colors.white,
+                    ),
                   ),
                   //Cards
                   Card(
@@ -79,22 +87,23 @@ class _MeuAppState extends State<MeuApp> {
                     ),
                   ),
                   Card(
-                      color: Colors.white,
-                      margin: EdgeInsets.symmetric(
-                          vertical: 10.0, horizontal: 25.0),
-                      child: ListTile(
-                        leading: Icon(
-                          Icons.email,
+                    color: Colors.white,
+                    margin:
+                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.email,
+                        color: Colors.blue,
+                      ),
+                      title: Text(
+                        "GitHub: @adilsonchameia",
+                        style: TextStyle(
+                          letterSpacing: 2,
                           color: Colors.blue,
                         ),
-                        title: Text(
-                          "GitHub: @adilsonchameia",
-                          style: TextStyle(
-                            letterSpacing: 2,
-                            color: Colors.blue,
-                          ),
-                        ),
-                      )),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             )));
