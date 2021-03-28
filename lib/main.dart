@@ -42,72 +42,59 @@ class _MeuAppState extends State<MeuApp> {
                         fontWeight: FontWeight.bold),
                   ),
                   //Cards
-                  Container(
-                    padding: EdgeInsets.all(10.0),
-                    color: Colors.white,
-                    margin:
-                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                    child: Row(
-                      children: [
-                        Icon(
+                  Card(
+                      color: Colors.white,
+                      margin:
+                          EdgeInsets.symmetric(vertical: 5.0, horizontal: 25.0),
+                      child: ListTile(
+                        leading: Icon(
                           Icons.mail,
                           color: Colors.blue,
                         ),
-                        SizedBox(height: 2.5),
-                        Text(
-                          " adilsonkchameia@gmail.com",
+                        title: Text(
+                          "adilsonkchameia@gmail.com",
                           style: TextStyle(
-                            letterSpacing: 2,
+                            letterSpacing: 1,
                             color: Colors.blue,
                           ),
                         ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.all(10.0),
+                      )),
+
+                  Card(
                     color: Colors.white,
                     margin:
-                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.phone,
+                        EdgeInsets.symmetric(vertical: 5.0, horizontal: 25.0),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.phone,
+                        color: Colors.blue,
+                      ),
+                      title: Text(
+                        "+244 948 294 426",
+                        style: TextStyle(
+                          letterSpacing: 2,
                           color: Colors.blue,
                         ),
-                        SizedBox(height: 2.5),
-                        Text(
-                          " +244 948 294 426",
-                          style: TextStyle(
-                            letterSpacing: 2,
-                            color: Colors.blue,
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                   ),
-                  Container(
-                    padding: EdgeInsets.all(10.0),
-                    color: Colors.white,
-                    margin:
-                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.computer,
+                  Card(
+                      color: Colors.white,
+                      margin: EdgeInsets.symmetric(
+                          vertical: 10.0, horizontal: 25.0),
+                      child: ListTile(
+                        leading: Icon(
+                          Icons.email,
                           color: Colors.blue,
                         ),
-                        SizedBox(height: 2.5),
-                        Text(
-                          " GitHub: @adilsonchameia",
+                        title: Text(
+                          "GitHub: @adilsonchameia",
                           style: TextStyle(
                             letterSpacing: 2,
                             color: Colors.blue,
                           ),
                         ),
-                      ],
-                    ),
-                  )
+                      )),
                 ],
               ),
             )));
